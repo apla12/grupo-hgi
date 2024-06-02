@@ -1,0 +1,173 @@
+<section class="businessunits-section">
+  <div class="titulo">UNIDADES DE NEGÓCIO</div>
+  <div class="subtitulo"></div>
+
+  <div class="content-body">
+    <div class="notification">
+      <div class="notiglow"></div>
+      <div class="notiborderglow"></div>
+      <div class="notititle"><span class="logo-inicial-small">HGI</span><span class="logo-und-small">SUPPLY</span></div>
+      <div class="notibody">
+        Contribute to Open Source UI Elements
+        <div class="btnDetalhes">
+          <a class="menu__link" href="/hgi-supply"><span class="btnSimboloDetalhes">+</span> Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="notification">
+      <div class="notiglow"></div>
+      <div class="notiborderglow"></div>
+      <div class="notititle"><span class="logo-inicial-small">HGI</span><span class="logo-und-small">MKT TÉCNICO</span>
+      </div>
+      <div class="notibody">
+        Contribute to Open Source UI Elements
+        <div class="btnDetalhes">
+          <a class="menu__link" href="#"><span class="btnSimboloDetalhes">+</span> Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="notification">
+      <div class="notiglow"></div>
+      <div class="notiborderglow"></div>
+      <div class="notititle"><span class="logo-inicial-small">HGI</span><span class="logo-und-small">GESTÃO DE
+          OBRAS</span></div>
+      <div class="notibody">
+        Contribute to Open Source UI Elements
+        <div class="btnDetalhes">
+          <a class="menu__link" href="#"><span class="btnSimboloDetalhes">+</span> Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="notification">
+      <div class="notiglow"></div>
+      <div class="notiborderglow"></div>
+      <div class="notititle"><span class="logo-inicial-small">HGI</span><span class="logo-und-small">EDUCAÇÃO</span>
+      </div>
+      <div class="notibody">
+        Contribute to Open Source UI Elements
+        <div class="btnDetalhes">
+          <a class="menu__link" href="#"><span class="btnSimboloDetalhes">+</span> Detalhes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-body">
+    <div class="notification">
+      <div class="notiglow"></div>
+      <div class="notiborderglow"></div>
+      <div class="notititle"><span class="logo-inicial-small">HGI</span><span class="logo-und-small">CONSULTORIA</span>
+      </div>
+      <div class="notibody">
+        Contribute to Open Source UI Elements
+        <div class="btnDetalhes">
+          <a class="menu__link" href="#"><span class="btnSimboloDetalhes">+</span> Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="notification">
+      <div class="notiglow"></div>
+      <div class="notiborderglow"></div>
+      <div class="notititle"><span class="logo-inicial-small">HGI</span><span class="logo-und-small">SERVIÇOS
+          ESPECIAIS</span></div>
+      <div class="notibody">
+        Contribute to Open Source UI Elements
+        <div class="btnDetalhes">
+          <a class="menu__link" href="#"><span class="btnSimboloDetalhes">+</span> Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="notification">
+      <div class="notiglow"></div>
+      <div class="notiborderglow"></div>
+      <div class="notititle"><span class="logo-inicial-small">HGI</span><span class="logo-und-small">SEGURANÇA DO
+          TRABALHO</span></div>
+      <div class="notibody">
+        Contribute to Open Source UI Elements
+        <div class="btnDetalhes">
+          <a class="menu__link" href="#"><span class="btnSimboloDetalhes">+</span> Detalhes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function ($) {
+    $(function () {
+
+
+      $(window).on('scroll', function () {
+        fnOnScroll();
+      });
+
+      $(window).on('resize', function () {
+        fnOnResize();
+      });
+
+
+      var agTimeline = $('.js-timeline'),
+        agTimelineLine = $('.js-timeline_line'),
+        agTimelineLineProgress = $('.js-timeline_line-progress'),
+        agTimelinePoint = $('.js-timeline-card_point-box'),
+        agTimelineItem = $('.js-timeline_item'),
+        agOuterHeight = $(window).outerHeight(),
+        agHeight = $(window).height(),
+        f = -1,
+        agFlag = false;
+
+      function fnOnScroll() {
+        agPosY = $(window).scrollTop();
+
+        fnUpdateFrame();
+      }
+
+      function fnOnResize() {
+        agPosY = $(window).scrollTop();
+        agHeight = $(window).height();
+
+        fnUpdateFrame();
+      }
+
+      function fnUpdateWindow() {
+        agFlag = false;
+
+        agTimelineLine.css({
+          top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
+          bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
+        });
+
+        f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
+      }
+
+      function fnUpdateProgress() {
+        var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
+
+        i = agTop + agPosY - $(window).scrollTop();
+        a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
+        n = agPosY - a + agOuterHeight / 2;
+        i <= agPosY + agOuterHeight / 2 && (n = i - a);
+        agTimelineLineProgress.css({ height: n + "px" });
+
+        agTimelineItem.each(function () {
+          var agTop = $(this).find(agTimelinePoint).offset().top;
+
+          (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
+        })
+      }
+
+      function fnUpdateFrame() {
+        agFlag || requestAnimationFrame(fnUpdateWindow);
+        agFlag = true;
+      }
+
+
+    });
+  })(jQuery);
+
+</script>

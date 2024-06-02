@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btns {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  button {
+    font-size: 12px;
+    font-family: roboto, sans-serif;
+  }
+}

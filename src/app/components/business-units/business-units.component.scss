@@ -1,0 +1,190 @@
+.businessunits-section {
+  padding         : 2rem 1rem 1rem 1em;
+  background-color: #1e242b;
+  background-image: radial-gradient(at 47% 33%,
+      hsl(212.31, 18%, 14.000000000000002%) 0,
+      transparent 59%),
+    radial-gradient(at 82% 65%, hsl(206.67, 20%, 18%) 0, transparent 55%);
+  height: auto;
+
+  .titulo {
+    text-align : center;
+    width      : 100%;
+    font-size  : 3rem;
+    font-weight: 700;
+    color      : #edf0f6;
+    font-family: "introBlack";
+  }
+
+  .content-body {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    gap            : 1rem;
+    padding        : 1rem 1rem 1rem 1rem;
+
+
+    /////////////////////////////////////////
+
+    .notification {
+      display       : flex;
+      flex-direction: column;
+      isolation     : isolate;
+      position      : relative;
+      width         : 100%;
+      height        : 8rem;
+      background    : #29292c;
+      border-radius : 5px;
+      overflow      : hidden;
+      font-family   : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size     : 16px;
+      --gradient    : linear-gradient(to bottom, #ffb670, #ff731c, #f05006);
+      --color       : #ff8c37
+    }
+
+    .notification:before {
+      position     : absolute;
+      content      : "";
+      inset        : 0.0625rem;
+      border-radius: 5px;
+      background   : #18181b;
+      z-index      : 2
+    }
+
+    .notification:after {
+      position     : absolute;
+      content      : "";
+      width        : 0.25rem;
+      inset        : 0.65rem auto 0.65rem 0.5rem;
+      border-radius: 5px;
+      background   : var(--gradient);
+      transition   : transform 300ms ease;
+      z-index      : 4;
+    }
+
+    .notification:hover:after {
+      transform: translateX(0.15rem)
+    }
+
+    .notititle {
+      color      : var(--color);
+      padding    : 0.65rem 0.25rem 0.4rem 1.25rem;
+      font-weight: 500;
+      font-size  : 1.1rem;
+      transition : transform 300ms ease;
+      z-index    : 5;
+
+      .logo-inicial-small {
+        color    : #ff8c37;
+        font-size: 1.4rem;
+      }
+
+      .logo-und-small {
+        color    : #dddddd;
+        font-size: 0.9rem;
+      }
+    }
+
+    .notification:hover .notititle {
+      transform: translateX(0.15rem)
+    }
+
+    .notibody {
+      color     : #99999d;
+      padding   : 0 1.25rem;
+      transition: transform 300ms ease;
+      z-index   : 5;
+    }
+
+    .notification:hover .notibody {
+      transform: translateX(0.25rem)
+    }
+
+    .notiglow,
+    .notiborderglow {
+      position  : absolute;
+      width     : 20rem;
+      height    : 20rem;
+      transform : translate(-50%, -50%);
+      background: radial-gradient(circle closest-side at center, white, transparent);
+      opacity   : 0;
+      transition: opacity 300ms ease;
+    }
+
+    .notiglow {
+      z-index: 3;
+    }
+
+    .notiborderglow {
+      z-index: 1;
+    }
+
+    .notification:hover .notiglow {
+      opacity: 0.1
+    }
+
+    .notification:hover .notiborderglow {
+      opacity: 0.1
+    }
+
+    .note {
+      color     : var(--color);
+      position  : fixed;
+      top       : 80%;
+      left      : 50%;
+      transform : translateX(-50%);
+      text-align: center;
+      font-size : 0.9rem;
+      width     : 75%;
+    }
+
+  }
+
+  .btnDetalhes {
+    display        : flex;
+    flex-direction : row;
+    justify-content: flex-end;
+    padding        : 0 5px 5px 5px;
+
+    .btnSimboloDetalhes{
+      font-size: 15px;
+      margin-right: 5px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .menu__link {
+    color      : #ff8c37;
+    line-height: 2;
+    position   : relative;
+  }
+
+  .menu__link::before {
+    content         : '';
+    width           : 100%;
+    height          : 2px;
+    border-radius   : 2px;
+    background-color: #ff8c37;
+    position        : absolute;
+    bottom          : -.5rem;
+    left            : 0;
+    transition      : transform .4s, opacity .4s;
+    opacity         : 0;
+  }
+
+  .menu__link:hover::before {
+    transform: translateY(-.25rem);
+    opacity  : 1;
+  }
+
+  @media (max-width: 800px) {
+    .content-body {
+      flex-direction: column;
+
+    }
+  }
+}

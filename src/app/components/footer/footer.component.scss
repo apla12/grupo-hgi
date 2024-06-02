@@ -1,0 +1,48 @@
+.footer-distributed {
+  background: #000000;
+  padding: 55px 50px;
+  color: #f3faf9;
+  font-size: 14px;
+
+  .footer-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .footer-company {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 25px;
+  }
+
+  a {
+    padding: 15px 15px 15px 15px;
+  }
+}
+
+.footer-dev {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  a {
+    font-size: smaller;
+    color: #f3faf9;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 880px) {
+}
