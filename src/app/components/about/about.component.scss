@@ -16,7 +16,7 @@
     width          : 100%;
     font-size      : 3rem;
     font-weight    : 700;
-    color          : #edf0f6;
+    color          : #f6f8f9;
     font-family    : 'introBlack', Verdana, Geneva, Tahoma, sans-serif;
   }
 
@@ -24,7 +24,7 @@
     text-align : center;
     width      : 100%;
     font-size  : 1.2rem;
-    color      : #ffffffba;
+    color      : #f6f8f9;
     font-family: 'Space Grotesk', Verdana, Geneva, Tahoma, sans-serif;
   }
 
@@ -34,28 +34,35 @@
     justify-content: center;
     align-items    : center;
     gap            : 1rem;
-    padding        : 1rem 1rem 1rem 1rem;
+    padding        : 1rem;
 
     .card {
-      backdrop-filter : blur(12px) saturate(200%);
-      background-color: rgba(245, 166, 35, 0.08);
-      border-radius   : 5px;
-      border          : 1px solid rgba(255, 255, 255, 0.125);
-      color           : #9ca3af;
-      padding         : 1rem 1rem 1rem 1rem;
-      width           : 30%;
-      height          : 30rem;
+      // background-color: #1e242b;
+      // border-radius   : 5px;
+      // border          : 1px solid #384654;
+      // color           : #f6f8f9;
+      // padding         : 1rem 1rem 1rem 1rem;
+      // width           : 30%;
+      // height          : 30rem;
+      // font-family     : "Space Grotesk", Verdana, Geneva, Tahoma, sans-serif;
+
+      font-size    : 1rem;
+      color        : #f6f8f9;
+      background   : linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
+      padding      : 1.5rem;
+      border-radius: 0.5rem;
 
       .header-card {
         background: transparent;
         padding   : 1.25rem 1.5rem;
         text-align: center;
-        height    : 250px;
+        height    : 210px;
 
         .autor {
           font-family: sans-serif;
           font-size  : 13px;
-          color      : #b0b0b0;
+          color      : #f6f8f9;
+          font-family: "Space Grotesk", Verdana, Geneva, Tahoma, sans-serif;
         }
 
         .sociais {
@@ -67,21 +74,22 @@
 
         .img-card {
           img {
-            border-radius: 50% !important;
+            border-radius     : 50% !important;
+            -webkit-box-shadow: 6px 5px 2em 2px #000000;
+            box-shadow        : 6px 5px 2em 2px #000000;
           }
         }
       }
 
       .body-card {
-        display        : flexbox !important;
-        justify-content: flex-end;
-        flex-direction : row;
+        display        : flex;
+        justify-content: center;
         flex-wrap      : wrap;
-        align-items    : flex-end;
 
         .txt {
           margin-bottom: 10px;
           text-align   : center;
+          font-family  : "Space Grotesk", Verdana, Geneva, Tahoma, sans-serif;
         }
 
         .destaque {
@@ -91,7 +99,9 @@
         }
       }
     }
+
   }
+
 
   @media (max-width: 800px) {
     .body-content {
@@ -185,5 +195,54 @@
     .custos {
       width: 100%;
     }
+  }
+}
+
+.banner-about {
+  height             : 500px;
+  background-image   : url(../../../assets/imgs/banner-about1.webp);
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: top;
+  object-fit         : cover;
+  inset              : 0;
+  z-index            : -1;
+
+  .row-banner {
+    display       : flex;
+    flex-direction: row;
+    width         : 100%;
+
+    .col-banner1 {
+      width         : 60%;
+      height        : 450px;
+      display       : flex;
+      flex-direction: column;
+    }
+
+    .col-banner2 {
+      width          : 40%;
+      height         : 450px;
+      display        : flex;
+      flex-direction : column;
+      justify-content: center;
+      text-align     : end;
+      color          : #ffffff;
+      font-size      : 1.2rem;
+      padding        : 0 2em 0 0;
+      line-height    : 1.5em;
+
+      .title-col-banner-2 {
+        font-size    : 2rem;
+        margin-bottom: 1.3em;
+        font-family  : "introBlack", Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .txt-objeto {
+        font-size: 2.5rem;
+      }
+    }
+
+
   }
 }
