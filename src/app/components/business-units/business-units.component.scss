@@ -1,4 +1,4 @@
-.businessunits-section {
+.business-units-section {
   padding         : 2rem 1rem 1rem 1em;
   background-color: #1e242b;
   background-image: radial-gradient(at 47% 33%,
@@ -8,12 +8,14 @@
   height: auto;
 
   .titulo {
-    text-align : center;
-    width      : 100%;
-    font-size  : 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
     font-weight: 700;
-    color      : #edf0f6;
-    font-family: "introBlack";
+    color: #f6f8f9;
+    font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .content-body {
@@ -190,5 +192,8 @@
       flex-direction: column;
 
     }
+
+
+
   }
 }

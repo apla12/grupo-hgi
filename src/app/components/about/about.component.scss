@@ -1,5 +1,5 @@
 .main-section {
-  padding         : 2rem 1rem 1rem 1rem;
+  padding         : 2rem 1rem 2rem 1rem;
   background-color: #1e242b;
   background-image: radial-gradient(at 47% 33%,
       hsl(212.31, 18%, 14.000000000000002%) 0,
@@ -14,6 +14,7 @@
     justify-content: center;
     text-align     : center;
     width          : 100%;
+    margin-top     : 1em;
     font-size      : 3rem;
     font-weight    : 700;
     color          : #f6f8f9;
@@ -34,23 +35,16 @@
     justify-content: center;
     align-items    : center;
     gap            : 1rem;
-    padding        : 1rem;
+    padding        : 2rem;
+    margin-top     : 1em;
 
     .card {
-      // background-color: #1e242b;
-      // border-radius   : 5px;
-      // border          : 1px solid #384654;
-      // color           : #f6f8f9;
-      // padding         : 1rem 1rem 1rem 1rem;
-      // width           : 30%;
-      // height          : 30rem;
-      // font-family     : "Space Grotesk", Verdana, Geneva, Tahoma, sans-serif;
-
       font-size    : 1rem;
       color        : #f6f8f9;
-      background   : linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
+      background   : linear-gradient(135deg, #0d1120 0%, rgba(255, 0, 0, 0), rgb(58, 75, 224, 12%));
       padding      : 1.5rem;
       border-radius: 0.5rem;
+      border       : 1px solid #384654;
 
       .header-card {
         background: transparent;
@@ -199,28 +193,26 @@
 }
 
 .banner-about {
-  height             : 500px;
-  background-image   : url(../../../assets/imgs/banner-about1.webp);
-  background-repeat  : no-repeat;
-  background-size    : cover;
-  background-position: top;
-  object-fit         : cover;
-  inset              : 0;
-  z-index            : -1;
-
   .row-banner {
     display       : flex;
     flex-direction: row;
     width         : 100%;
 
     .col-banner1 {
-      width         : 60%;
-      height        : 450px;
-      display       : flex;
-      flex-direction: column;
+      background-image   : url(../../../assets/imgs/banner-about0.webp);
+      background-repeat  : no-repeat;
+      background-size    : cover;
+      object-fit         : cover;
+      inset              : 0;
+      z-index            : -1;
+      width              : 60%;
+      height             : 450px;
+      display            : flex;
+      flex-direction     : column;
     }
 
     .col-banner2 {
+      background-color: #1d1d1d;
       width          : 40%;
       height         : 450px;
       display        : flex;
@@ -244,5 +236,34 @@
     }
 
 
+  }
+
+}
+
+@media (max-width: 800px) {
+  .banner-about {
+    height             : 500px;
+    background-image   : url(../../../assets/imgs/banner-about0.1.webp);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: top;
+    object-fit         : cover;
+    inset              : 0;
+    z-index            : -1;
+  }
+
+  .row-banner {
+    display       : flex;
+    flex-direction: column;
+
+    .col-banner1 {
+      display       : flex;
+      flex-direction: row;
+    }
+
+    .col-banner2 {
+      display       : flex;
+      flex-direction: row;
+    }
   }
 }
