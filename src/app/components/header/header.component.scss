@@ -1,9 +1,10 @@
 .section-header {
-  width          : 100%;
-  display        : flex;
-  justify-content: center;
-  align-items    : center;
-  flex-direction : column;
+  background-image   : url(../../../assets/imgs/header-logo.webp);
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: top;
+  height             : 75%;
+  width              : 100%;
 
   .logo {
     display        : flex;
@@ -44,20 +45,8 @@
   }
 }
 
-@media screen and (max-width: 963px) {
-  .logo {
-    .hgi {
-      font-size: 15vw;
-    }
-
-    .supply {
-      font-size: 11vw;
-    }
-  }
-
-  .slogan {
-    .descricao {
-      font-size: 4.5vw;
-    }
+@media screen and (max-width: 997px) {
+  .section-header {
+    background-image   : url(../../../assets/imgs/header-logo-hgi.webp);
   }
 }

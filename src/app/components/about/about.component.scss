@@ -7,7 +7,6 @@
     radial-gradient(at 82% 65%, hsl(206.67, 20%, 18%) 0, transparent 55%);
   height: auto;
 
-
   .titulo {
     display        : flex;
     flex-direction : row;
@@ -39,12 +38,14 @@
     margin-top     : 1em;
 
     .card {
-      font-size    : 1rem;
-      color        : #f6f8f9;
-      background   : linear-gradient(135deg, #0d1120 0%, rgba(255, 0, 0, 0), rgb(58, 75, 224, 12%));
-      padding      : 1.5rem;
-      border-radius: 0.5rem;
-      border       : 1px solid #384654;
+      font-size              : 1rem;
+      color                  : #f6f8f9;
+      background             : linear-gradient(135deg, #0d1120 0%, rgba(255, 0, 0, 0), rgb(58, 75, 224, 12%));
+      padding                : 1.5rem;
+      border-radius          : 0.5rem;
+      border                 : 1px solid #384654;
+      -webkit-backdrop-filter: blur(46px) sepia(100%);
+      backdrop-filter        : blur(46px) sepia(100%);
 
       .header-card {
         background: transparent;
@@ -93,34 +94,76 @@
         }
       }
     }
-
   }
+}
 
 
-  @media (max-width: 800px) {
-    .body-content {
-      flex-direction: column;
+/* section 2 */
+.banner-about {
+  .row-banner {
+    display       : flex;
+    flex-direction: row;
+    width         : 100%;
 
-      .col-desc {
-        padding: 0;
+    .col-banner1 {
+      background-image : url(../../../assets/imgs/banner-about0.webp);
+      background-repeat: no-repeat;
+      background-size  : cover;
+      object-fit       : cover;
+      inset            : 0;
+      z-index          : -1;
+      width            : 60%;
+      height           : 450px;
+      display          : flex;
+      flex-direction   : column;
+    }
+
+    .col-banner2 {
+      background-color: #1d1d1d;
+      width           : 40%;
+      height          : 450px;
+      display         : flex;
+      flex-direction  : column;
+      justify-content : center;
+      text-align      : end;
+      color           : #ffffff;
+      font-size       : 1.2rem;
+      padding         : 0 2em 0 0;
+      line-height     : 1.5em;
+
+      .title-col-banner-2 {
+        font-size  : 2rem;
+        font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
       }
 
-      .card {
-        width: 100%;
+      .txt-objeto {
+        font-size  : 2.5rem;
+        color      : #da692d;
+        font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .desc-objetivo {
+        display       : flex;
+        flex-direction: row;
+        margin-top    : 2em;
       }
     }
   }
 }
 
-/* 2 section */
-
+/* section 3 */
 .call-to-action-about {
   background-attachment: fixed;
 }
 
-.call-to-action-about .btn-main {
-  margin       : 20px 20px 20px 20px;
-  border-radius: 15px;
+.bg-1-about {
+  background-image   : url('../../../assets/imgs/slide1.webp');
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: top;
+  object-fit         : cover;
+  inset              : 0;
+  z-index            : -1;
 }
 
 .bg-1-about::before {
@@ -133,16 +176,6 @@
   flex-wrap      : wrap;
   justify-content: center;
   position       : relative;
-}
-
-.bg-1-about {
-  background-image   : url('../../../assets/imgs/slide1.webp');
-  background-repeat  : no-repeat;
-  background-size    : cover;
-  background-position: top;
-  object-fit         : cover;
-  inset              : 0;
-  z-index            : -1;
 }
 
 .space-one {
@@ -181,89 +214,61 @@
       }
     }
   }
-
 }
 
-@media (max-width: 800px) {
-  .space-one {
-    .custos {
-      width: 100%;
-    }
-  }
-}
+@media (max-width: 997px) {
+  .main-section {
+    .body-content {
+      flex-direction: column;
 
-.banner-about {
-  .row-banner {
-    display       : flex;
-    flex-direction: row;
-    width         : 100%;
-
-    .col-banner1 {
-      background-image   : url(../../../assets/imgs/banner-about0.webp);
-      background-repeat  : no-repeat;
-      background-size    : cover;
-      object-fit         : cover;
-      inset              : 0;
-      z-index            : -1;
-      width              : 60%;
-      height             : 450px;
-      display            : flex;
-      flex-direction     : column;
-    }
-
-    .col-banner2 {
-      background-color: #1d1d1d;
-      width          : 40%;
-      height         : 450px;
-      display        : flex;
-      flex-direction : column;
-      justify-content: center;
-      text-align     : end;
-      color          : #ffffff;
-      font-size      : 1.2rem;
-      padding        : 0 2em 0 0;
-      line-height    : 1.5em;
-
-      .title-col-banner-2 {
-        font-size    : 2rem;
-        margin-bottom: 1.3em;
-        font-family  : "introBlack", Verdana, Geneva, Tahoma, sans-serif;
+      .col-desc {
+        padding: 0;
       }
 
-      .txt-objeto {
-        font-size: 2.5rem;
+      .card {
+        width: 100%;
       }
     }
-
-
   }
 
-}
-
-@media (max-width: 800px) {
   .banner-about {
-    height             : 500px;
     background-image   : url(../../../assets/imgs/banner-about0.1.webp);
     background-repeat  : no-repeat;
     background-size    : cover;
-    background-position: top;
-    object-fit         : cover;
-    inset              : 0;
-    z-index            : -1;
+    background-position: bottom;
+
+    .row-banner {
+      display: block;
+
+      .col-banner1 {
+        flex-direction: row;
+        width         : 100%;
+      }
+
+      .col-banner2 {
+        width          : fit-content;
+        text-align     : end;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        padding        : 2em 2em 2em 2em;
+
+        .title-col-banner-2 {
+          margin-bottom: 0;
+        }
+
+        .desc-objetivo {
+          display       : flex;
+          flex-direction: row;
+        }
+      }
+    }
   }
 
-  .row-banner {
-    display       : flex;
-    flex-direction: column;
-
-    .col-banner1 {
-      display       : flex;
-      flex-direction: row;
-    }
-
-    .col-banner2 {
-      display       : flex;
-      flex-direction: row;
+  .space-one {
+    .custos {
+      width: 77%;
     }
   }
+
 }
