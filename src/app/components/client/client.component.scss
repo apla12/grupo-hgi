@@ -1,0 +1,65 @@
+.main-section {
+  padding         : 2rem 1rem 1rem 1em;
+  background-color: #1e242b;
+  background-image: radial-gradient(at 47% 33%,
+      hsl(212.31, 18%, 14.000000000000002%) 0,
+      transparent 59%),
+    radial-gradient(at 82% 65%, hsl(206.67, 20%, 18%) 0, transparent 55%);
+  height: auto;
+
+  .titulo {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    text-align     : center;
+    width          : 100%;
+    margin-top     : 1em;
+    font-size      : 3rem;
+    font-weight    : 700;
+    color          : #f6f8f9;
+    font-family    : 'introBlack', Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .accordion {
+    display: flex;
+    height : 20vh;
+    padding: 2rem 1rem 1rem 1em;
+  }
+
+  .accordion .item {
+    background-size    : cover;
+    background-position: center center;
+    background-repeat  : no-repeat;
+    margin             : 5px;
+    flex               : 2;
+    transition         : flex 400ms;
+    border-radius      : 5px;
+  }
+
+  .accordion .item:hover {
+    flex: 4;
+  }
+
+  .bg-barcelona {
+    background-image: url(../../../assets/clients/ambar.png);
+  }
+
+  .bg-sydney {
+    background-image: url(../../../assets/clients/bild.png);
+  }
+
+  .bg-venice {
+    background-image: url(../../../assets/clients/brasal.png);
+  }
+
+  .bg-singapore {
+    background-image: url(../../../assets/clients/calper.png);
+  }
+
+  .bg-san-francisco {
+    background-image: url(../../../assets/clients/ambar.png);
+  }
+
+
+
+}

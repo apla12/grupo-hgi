@@ -16,6 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withFetch()),
     provideAnimationsAsync(),
     provideAnimations(),
+
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
   ],
 };

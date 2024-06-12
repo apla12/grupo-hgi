@@ -7,13 +7,25 @@ import { Component, OnInit } from '@angular/core';
   imports: [NgOptimizedImage],
   providers: [],
   templateUrl: './client.component.html',
-  styleUrls: ['./client.component.scss']
+  styleUrls: ['./client.component.scss'],
 })
 export class ClientComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  accordionsClient(_event: any) {
+    const target = _event.target.closest('.card');
+
+    if (!target) return;
+
+    document
+      .querySelector('.container')
+      ?.querySelectorAll('.card')
+      .forEach((card) => {
+        card.classList.remove('active');
+      });
+
+    target.classList.add('active');
   }
-
 }
