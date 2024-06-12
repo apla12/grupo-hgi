@@ -6,6 +6,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../header/header.component';
 import { MenuComponent } from '../menu/menu.component';
 import { BusinessUnitsComponent } from '../business-units/business-units.component';
+import { ClientComponent } from '../client/client.component';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,7 @@ import { BusinessUnitsComponent } from '../business-units/business-units.compone
     HeaderComponent,
     AboutComponent,
     BusinessUnitsComponent,
+    ClientComponent,
     ContactComponent,
     FooterComponent,
   ],

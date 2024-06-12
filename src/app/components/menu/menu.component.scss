@@ -2,8 +2,9 @@
   display        : flex;
   align-items    : center;
   justify-content: flex-end;
-  position       : fixed;
-  padding        : 0 1em 0 0;
+  width          : 90%;
+  position       : absolute;
+  padding        : 0;
 
   .nav {
     display        : flex;
@@ -22,5 +23,11 @@
     font-size  : 12px;
     font-family: roboto, sans-serif;
     color      : #ffffff !important;
+  }
+}
+
+@media screen and (max-width: 997px) {
+  .menu {
+    padding: 0 1em 0 0;
   }
 }

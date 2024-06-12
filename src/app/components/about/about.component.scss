@@ -40,12 +40,12 @@
     .card {
       font-size              : 1rem;
       color                  : #f6f8f9;
-      background             : linear-gradient(135deg, #0d1120 0%, rgba(255, 0, 0, 0), rgb(58, 75, 224, 12%));
+      background             : linear-gradient(179deg, #d7e3ff 5%, rgba(236, 155, 5, 0), rgba(58, 75, 224, 0.12));
       padding                : 1.5rem;
       border-radius          : 0.5rem;
-      border                 : 1px solid #384654;
-      -webkit-backdrop-filter: blur(46px) sepia(100%);
-      backdrop-filter        : blur(46px) sepia(100%);
+      border                 : 1px solid #d7e3ff;
+      -webkit-backdrop-filter: blur(46px) contrast(0.5);
+      backdrop-filter        : blur(46px) contrast(0.5);
 
       .header-card {
         background: transparent;
@@ -179,7 +179,7 @@
 }
 
 .space-one {
-  height         : 19em;
+  height         : 22em;
   display        : flex;
   flex-direction : row;
   justify-content: flex-start;
@@ -187,7 +187,7 @@
 
   .custos {
     padding         : 1rem;
-    width           : 60%;
+    width           : 50%;
     height          : auto;
     margin          : 2rem;
     text-align      : left;
