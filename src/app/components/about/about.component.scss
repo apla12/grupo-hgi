@@ -1,4 +1,4 @@
-.main-section {
+.main-section-about {
   padding         : 2rem 1rem 1rem 1em;
   background-color: #1e242b;
   background-image: radial-gradient(at 47% 33%,
@@ -7,7 +7,7 @@
     radial-gradient(at 82% 65%, hsl(206.67, 20%, 18%) 0, transparent 55%);
   height: auto;
 
-  .titulo {
+  .titulo-about {
     display        : flex;
     flex-direction : row;
     justify-content: center;
@@ -16,11 +16,12 @@
     margin-top     : 1em;
     font-size      : 3rem;
     font-weight    : 700;
+    line-height    : 52px;
     color          : #f6f8f9;
     font-family    : 'introBlack', Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  .subtitulo {
+  .subtitulo-about {
     text-align : center;
     width      : 100%;
     font-size  : 1.2rem;
@@ -28,7 +29,11 @@
     font-family: 'Space Grotesk', Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  .body-content {
+  .space {
+    margin-top: 2em;
+  }
+
+  .body-content-about {
     display        : flex;
     flex-direction : row;
     justify-content: center;
@@ -37,7 +42,7 @@
     padding        : 2rem;
     margin-top     : 1em;
 
-    .card {
+    .card-about {
       font-size              : 1rem;
       color                  : #f6f8f9;
       background             : linear-gradient(179deg, #d7e3ff 5%, rgba(236, 155, 5, 0), rgba(58, 75, 224, 0.12));
@@ -47,27 +52,27 @@
       -webkit-backdrop-filter: blur(46px) contrast(0.5);
       backdrop-filter        : blur(46px) contrast(0.5);
 
-      .header-card {
+      .header-card-about {
         background: transparent;
         padding   : 1.25rem 1.5rem;
         text-align: center;
         height    : 210px;
 
-        .autor {
+        .autor-about {
           font-family: sans-serif;
           font-size  : 13px;
           color      : #f6f8f9;
           font-family: "Space Grotesk", Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        .sociais {
+        .sociais-about {
           img {
             padding: 5px;
             width  : 25px;
           }
         }
 
-        .img-card {
+        .img-card-about {
           img {
             border-radius     : 50% !important;
             -webkit-box-shadow: 6px 5px 2em 2px #000000;
@@ -76,18 +81,20 @@
         }
       }
 
-      .body-card {
+      .body-card-about {
         display        : flex;
         justify-content: center;
         flex-wrap      : wrap;
 
-        .txt {
+        .txt-about {
           margin-bottom: 10px;
-          text-align   : center;
+          text-align   : justify;
+          font-size    : 0.9rem;
           font-family  : "Space Grotesk", Verdana, Geneva, Tahoma, sans-serif;
+
         }
 
-        .destaque {
+        .destaque-about {
           color       : #da692d;
           margin-left : 2px;
           margin-right: 2px;
@@ -100,12 +107,12 @@
 
 /* section 2 */
 .banner-about {
-  .row-banner {
+  .row-banner-about {
     display       : flex;
     flex-direction: row;
     width         : 100%;
 
-    .col-banner1 {
+    .col-banner1-about {
       background-image : url(../../../assets/imgs/banner-about0.webp);
       background-repeat: no-repeat;
       background-size  : cover;
@@ -118,7 +125,7 @@
       flex-direction   : column;
     }
 
-    .col-banner2 {
+    .col-banner2-about {
       background-color: #1d1d1d;
       width           : 40%;
       height          : 450px;
@@ -131,18 +138,18 @@
       padding         : 0 2em 0 0;
       line-height     : 1.5em;
 
-      .title-col-banner-2 {
+      .title-col-banner-2-about {
         font-size  : 2rem;
         font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
       }
 
-      .txt-objeto {
+      .txt-objeto-about {
         font-size  : 2.5rem;
         color      : #da692d;
         font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
       }
 
-      .desc-objetivo {
+      .desc-objetivo-about {
         display       : flex;
         flex-direction: row;
         margin-top    : 2em;
@@ -152,7 +159,7 @@
 }
 
 /* section 3 */
-.call-to-action-about {
+.call-to-action-about-about {
   background-attachment: fixed;
 }
 
@@ -178,14 +185,14 @@
   position       : relative;
 }
 
-.space-one {
+.space-one-about {
   height         : 22em;
   display        : flex;
   flex-direction : row;
   justify-content: flex-start;
   align-items    : center;
 
-  .custos {
+  .custos-about {
     padding         : 1rem;
     width           : 50%;
     height          : auto;
@@ -196,20 +203,20 @@
     border-radius   : 5px;
     border          : 1px solid #da692d;
 
-    .banner {
+    .banner-about {
       display      : flex;
       font-size    : 1.2rem;
       gap          : 14px;
       margin-bottom: 10px;
     }
 
-    .banner-destaque {
+    .banner-destaque-about {
       display      : flex;
       font-size    : 1.8rem;
       gap          : 14px;
       margin-bottom: 10px;
 
-      .destaque {
+      .destaque-about {
         color: #da692d;
       }
     }
@@ -217,15 +224,11 @@
 }
 
 @media (max-width: 997px) {
-  .main-section {
-    .body-content {
+  .main-section-about {
+    .body-content-about {
       flex-direction: column;
 
-      // .col-desc {
-      //   padding: 0;
-      // }
-
-      .card {
+      .card-about {
         width: 100%;
       }
     }
@@ -237,15 +240,15 @@
     background-size    : cover;
     background-position: bottom;
 
-    .row-banner {
+    .row-banner-about {
       display: block;
 
-      .col-banner1 {
+      .col-banner1-about {
         flex-direction: row;
         width         : 100%;
       }
 
-      .col-banner2 {
+      .col-banner2-about {
         width          : fit-content;
         text-align     : end;
         display        : flex;
@@ -253,11 +256,11 @@
         justify-content: center;
         padding        : 2em 2em 2em 2em;
 
-        .title-col-banner-2 {
+        .title-col-banner-2-about {
           margin-bottom: 0;
         }
 
-        .desc-objetivo {
+        .desc-objetivo-about {
           display       : flex;
           flex-direction: row;
         }
@@ -265,8 +268,8 @@
     }
   }
 
-  .space-one {
-    .custos {
+  .space-one-about {
+    .custos-about {
       width: 77%;
     }
   }

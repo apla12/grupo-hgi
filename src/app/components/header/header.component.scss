@@ -2,51 +2,13 @@
   background-image   : url(../../../assets/imgs/header-logo.webp);
   background-repeat  : no-repeat;
   background-size    : cover;
-  background-position: top;
-  height             : 75%;
+  background-position: center;
+  height             : 100%;
   width              : 100%;
-
-  .logo {
-    display        : flex;
-    flex-direction : row;
-    width          : 100%;
-    justify-content: center;
-    align-items    : center;
-
-    .logo-grupo {
-      font-size  : 5.9vw;
-      font-weight: 900;
-      font-family: "introBlack";
-      color      : #58595c;
-    }
-
-    .logo-hgi {
-      font-size  : 5.9rem;
-      font-weight: 900;
-      font-family: "CoconBold";
-      color      : #da692d;
-    }
-  }
-
-  .slogan {
-    display        : flex;
-    flex-direction : row;
-    width          : 100%;
-    justify-content: center;
-    align-items    : center;
-
-    .descricao {
-      text-align   : center;
-      font-size    : 2.9vw;
-      color        : #58595c;
-      font-family  : "introBlack";
-      margin-bottom: 2rem;
-    }
-  }
 }
 
 @media screen and (max-width: 997px) {
   .section-header {
-    background-image   : url(../../../assets/imgs/header-logo-hgi.webp);
+    background-image: url(../../../assets/imgs/header-logo-hgi.webp);
   }
 }

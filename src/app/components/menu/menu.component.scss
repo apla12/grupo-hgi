@@ -26,6 +26,11 @@
   }
 }
 
+a {
+  text-decoration: none;
+  color          : #ffffff;
+}
+
 @media screen and (max-width: 997px) {
   .menu {
     padding: 0 1em 0 0;

@@ -7,20 +7,18 @@
     radial-gradient(at 82% 65%, hsl(206.67, 20%, 18%) 0, transparent 55%);
   height: auto;
 
-  .titulo {
-    display        : flex;
-    flex-direction : row;
-    justify-content: center;
-    text-align     : center;
-    font-size      : 3rem;
-    margin-top     : 1em;
-    margin-bottom  : 1em;
-    font-weight    : 700;
-    color          : #f6f8f9;
-    font-family    : "introBlack", Verdana, Geneva, Tahoma, sans-serif;
+  .titulo-bu {
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f6f8f9;
+    line-height: 52px;
+    font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2em 0 2em 0;
   }
 
-  .content-body {
+  .content-body-bu {
     display        : flex;
     flex-direction : row;
     justify-content: center;
@@ -28,7 +26,7 @@
     gap            : 1rem;
     padding        : 1rem 1rem 1rem 1rem;
 
-    .unique-card {
+    .unique-card-bu {
       position     : relative;
       width        : 33%;
       height       : 20em;
@@ -38,12 +36,12 @@
       transition   : transform 0.3s, box-shadow 0.3s;
     }
 
-    .unique-card:hover {
+    .unique-card-bu:hover {
       transform : scale(1.1);
       box-shadow: 0 1px 5px #f96d00;
     }
 
-    .card-content {
+    .card-content-bu {
       position  : absolute;
       top       : 50%;
       left      : 50%;
@@ -54,7 +52,7 @@
       z-index   : 2;
       transition: color 0.3s;
 
-      .btnDetalhes {
+      .btnDetalhes-bu {
         display        : flex;
         flex-direction : row;
         justify-content: center;
@@ -64,11 +62,11 @@
       }
     }
 
-    .unique-card:hover .card-content {
+    .unique-card-bu:hover .card-content-bu {
       color: #f96d00;
     }
 
-    .background-overlay {
+    .background-overlay-bu {
       position     : absolute;
       top          : 0;
       left         : 0;
@@ -79,22 +77,22 @@
       transition   : opacity 0.3s;
     }
 
-    .unique-card:hover .background-overlay {
+    .unique-card-bu:hover .background-overlay-bu {
       opacity: 1;
     }
 
-    .card-title {
+    .card-title-bu {
       font-size    : 24px;
       font-weight  : bold;
       margin-bottom: 10px;
     }
 
-    .card-description {
+    .card-description-bu {
       font-size: 0.9rem;
       padding  : 10px;
     }
 
-    .logo-card {
+    .logo-card-bu {
       width: 100%;
     }
   }
@@ -103,10 +101,11 @@
 
 @media (max-width: 997px) {
   .business-units-section {
-    .content-body {
+
+    .content-body-bu {
       flex-direction: column;
 
-      .unique-card {
+      .unique-card-bu {
         width: 100%;
       }
     }

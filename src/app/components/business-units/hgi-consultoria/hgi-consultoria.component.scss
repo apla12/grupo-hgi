@@ -1,0 +1,47 @@
+// header
+.section-header {
+  background-image   : url(../../../../assets/imgs/header-logo.webp);
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: top;
+  height             : 75%;
+  width              : 100%;
+
+  .logo {
+    display        : flex;
+    flex-direction : row;
+    width          : 100%;
+    justify-content: center;
+    align-items    : center;
+  }
+
+  .slogan {
+    display        : flex;
+    flex-direction : row;
+    width          : 100%;
+    justify-content: center;
+    align-items    : center;
+  }
+}
+
+// body
+.section-consultoria {
+  padding         : 2rem 1rem 1rem 1rem;
+  background-color: #1e242b;
+  background-image: radial-gradient(at 47% 33%,
+      hsl(212.31, 18%, 14.000000000000002%) 0,
+      transparent 59%),
+    radial-gradient(at 82% 65%, hsl(206.67, 20%, 18%) 0, transparent 55%);
+
+  .titulo {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    text-align     : center;
+    width          : 100%;
+    font-size      : 3rem;
+    font-weight    : 700;
+    color          : #edf0f6;
+    font-family    : 'introBlack', Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
