@@ -1,9 +1,9 @@
-.main-section-contact {
+.main-section-contato {
   padding         : 2rem 1rem 1rem 1rem;
   background-color: #000000;
   color           : #ffffff;
 
-  .titulo-contact {
+  .titulo-contato {
     text-align : center;
     width      : 100%;
     font-size  : 3rem;
@@ -11,7 +11,7 @@
     line-height: 52px;
     color      : #f6f8f9;
     font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
-    padding    : 2em 0 2em 0;
+    padding    : 2em 0 1em 0;
   }
 
   .contato {
@@ -23,8 +23,8 @@
     padding        : 1rem 1rem 1rem 1rem;
 
     .details-contato {
-      width  : 50%;
-      padding: 1rem 1rem 1rem 1rem;
+      width    : 50%;
+      padding  : 1rem 1rem 1rem 1rem;
       font-size: 1.3rem;
 
       .card-contato {
@@ -112,7 +112,7 @@
     .form-contato {
       width: 50%;
 
-      .container-contact {
+      .container-contato {
         margin-left  : 8px;
         margin-bottom: 15px;
 
@@ -123,7 +123,7 @@
 }
 
 @media (max-width: 800px) {
-  .main-section-contact {
+  .main-section-contato {
 
     .contato {
       display        : flex;
@@ -136,6 +136,12 @@
       .details-contato {
         width  : 100%;
         padding: 0rem 0rem 0rem 0rem;
+
+        .card-contato {
+          display: flex;
+          height : 70px;
+          padding: 2em;
+        }
 
       }
 
@@ -235,29 +241,30 @@ html {
 
 .footer-distributed {
   background: #000000;
-  padding: 55px 50px;
-  color: #f3faf9;
-  font-size: 14px;
+  padding   : 55px 50px;
+  color     : #f3faf9;
+  font-size : 14px;
+  margin-top: -1px;
 
   .footer-img {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom  : 25px;
   }
 
   .footer-company {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top     : 10px;
   }
 
   .footer-social {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
     justify-content: center;
-    align-content: center;
-    margin-top: 25px;
+    align-content  : center;
+    margin-top     : 25px;
   }
 
   a {
@@ -266,23 +273,22 @@ html {
 }
 
 .footer-dev {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display        : flex;
+  flex-direction : row;
+  flex-wrap      : wrap;
   justify-content: center;
-  align-content: center;
+  align-content  : center;
 
   a {
-    font-size: smaller;
-    color: #f3faf9;
+    font-size      : smaller;
+    color          : #f3faf9;
     text-decoration: none;
   }
 }
 
-@media (max-width: 880px) {
-}
+@media (max-width: 880px) {}
 
 .mat-mdc-unelevated-button:not(:disabled) {
-  color: var(--mdc-filled-button-label-text-color);
+  color           : var(--mdc-filled-button-label-text-color);
   background-color: #e6683c;
 }

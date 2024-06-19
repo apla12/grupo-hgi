@@ -1,6 +1,6 @@
 // header
-.section-header {
-  background-image   : url(../../../../assets/imgs/header-logo.webp);
+.section-header-consultoria {
+  background-image   : url(../../../../assets/hgiconsultoria/header-consultoria.webp);
   background-repeat  : no-repeat;
   background-size    : cover;
   background-position: top;
@@ -34,14 +34,103 @@
     radial-gradient(at 82% 65%, hsl(206.67, 20%, 18%) 0, transparent 55%);
 
   .titulo {
+    text-align : center;
+    width      : 100%;
+    font-size  : 3rem;
+    font-weight: 700;
+    color      : #f6f8f9;
+    line-height: 52px;
+    font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
+    padding    : 2em 0 2em 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .row {
+    padding: 2rem;
+  }
+
+  .column {
+    float     : left;
+    width     : 50%;
+    padding   : 10px;
+    height    : 300px;
+    text-align: center;
+
+    img {
+      width: 20em;
+    }
+  }
+
+  .column1 {
+    float          : left;
+    width          : 50%;
+    padding        : 10px;
+    height         : 300px;
     display        : flex;
+    text-align     : center;
+    flex-direction : column;
+    justify-content: center;
+
+    p {
+      color    : #f6f8f9;
+      font-size: 1.3rem;
+    }
+
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear  : both;
+  }
+
+  .row-fase {
+    display        : flex;
+    text-align     : center;
     flex-direction : row;
     justify-content: center;
-    text-align     : center;
-    width          : 100%;
-    font-size      : 3rem;
-    font-weight    : 700;
-    color          : #edf0f6;
-    font-family    : 'introBlack', Verdana, Geneva, Tahoma, sans-serif;
+    gap: 20px;
+    padding-top: 20px;
+
+    .column-fase {
+      border: 1px solid white;
+
+      float     : left;
+      width     : 20%;
+      padding   : 10px;
+      height    : 300px;
+      text-align: center;
+      display        : flex;
+      text-align     : center;
+      flex-direction : column;
+      justify-content: center;
+
+    }
   }
+  .row-fase:after {
+    content: "";
+    display: table;
+    clear  : both;
+  }
+
+
+
+  @media screen and (max-width: 997px) {
+    .column {
+      width: 100%;
+    }
+
+    .column1 {
+      width  : 100%;
+      padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .column-fase {
+      width  : 100%;
+    }
+  }
+
 }

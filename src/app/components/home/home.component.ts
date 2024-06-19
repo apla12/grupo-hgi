@@ -4,7 +4,6 @@ import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
 import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../header/header.component';
-import { MenuComponent } from '../menu/menu.component';
 import { BusinessUnitsComponent } from '../business-units/business-units.component';
 import { ClientComponent } from '../client/client.component';
 
@@ -13,7 +12,6 @@ import { ClientComponent } from '../client/client.component';
   standalone: true,
   imports: [
     NgOptimizedImage,
-    MenuComponent,
     HeaderComponent,
     AboutComponent,
     BusinessUnitsComponent,

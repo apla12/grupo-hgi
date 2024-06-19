@@ -29,8 +29,8 @@
     flex-direction : row;
     justify-content: center;
     align-items    : center;
-    gap            : 1rem;
-    padding        : 2rem;
+    gap            : 2rem;
+    padding        : 2rem 2em 0 2em;
 
     .header-card-client {
       background: transparent;
@@ -47,7 +47,8 @@
         flex-direction: column;
         text-align    : center;
         align-items   : center;
-        width         : 200px;
+        width         : 100%;
+        font-size     : 1.2rem;
 
         img {
           width        : 80px;

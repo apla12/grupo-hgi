@@ -8,14 +8,14 @@
   height: auto;
 
   .titulo-bu {
-    text-align: center;
-    width: 100%;
-    font-size: 3rem;
+    text-align : center;
+    width      : 100%;
+    font-size  : 3rem;
     font-weight: 700;
-    color: #f6f8f9;
+    color      : #f6f8f9;
     line-height: 52px;
     font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
-    padding: 2em 0 2em 0;
+    padding    : 2em 0 2em 0;
   }
 
   .content-body-bu {
@@ -39,6 +39,7 @@
     .unique-card-bu:hover {
       transform : scale(1.1);
       box-shadow: 0 1px 5px #f96d00;
+      z-index   : 1;
     }
 
     .card-content-bu {
@@ -112,6 +113,6 @@
   }
 }
 
-a{
+a {
   text-decoration: none;
 }
