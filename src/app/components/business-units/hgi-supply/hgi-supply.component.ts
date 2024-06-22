@@ -12,6 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatStepperModule } from '@angular/material/stepper';
 import { FooterComponent } from '../../footer/footer.component';
+import { TimeLineComponent } from '../time-line/time-line.component';
 
 @Component({
   selector: 'app-hgi-supply',
@@ -26,6 +27,7 @@ import { FooterComponent } from '../../footer/footer.component';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
+    TimeLineComponent
   ],
   providers: [],
   templateUrl: './hgi-supply.component.html',
