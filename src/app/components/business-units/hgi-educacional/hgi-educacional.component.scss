@@ -1,0 +1,151 @@
+/* header */
+.section-header-educacao {
+  background-image   : url(../../../../assets/hgieducacao/header-educacao.webp);
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: top;
+  height             : 80%;
+  max-width          : 100%;
+}
+
+/* body */
+.section-educacao {
+  padding         : 2rem 1rem 1rem 1rem;
+  background-color: #1e242b;
+  background-image: radial-gradient(at 47% 33%,
+      hsl(212.31, 18%, 14.000000000000002%) 0,
+      transparent 59%),
+    radial-gradient(at 82% 65%, hsl(206.67, 20%, 18%) 0, transparent 55%);
+
+  .titulo-educacao {
+    text-align : center;
+    width      : 100%;
+    font-size  : 2.9rem;
+    font-weight: 700;
+    color      : #f6f8f9;
+    line-height: 52px;
+    font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
+    padding    : 1em 0 6px 0;
+  }
+
+  .subtitulo-educacao {
+    text-align : center;
+    width      : 100%;
+    font-size  : 1.2rem;
+    font-weight: lighter;
+    color      : #da692d;
+    font-family: 'Space Grotesk', Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .row-educacao {
+    display        : flex;
+    text-align     : left;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    padding        : 2em;
+
+    .column-educacao-img {
+      width: 39%;
+
+      img {
+        width           : 20rem;
+        border-radius   : 5px;
+        background-color: #f6f8f9;
+      }
+    }
+
+    .column-educacao {
+      width: 50%;
+      color: #f6f8f9;
+
+      div {
+        margin-top: 18px;
+        font-size : 16px;
+      }
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .videos {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    padding        : 0 1rem 4rem 1rem;
+  }
+
+  .mapa-unicte{
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+  }
+
+}
+
+@media screen and (max-width: 997px) {
+  .section-seg-trab {
+
+    .row-seg-trab {
+      flex-direction: column;
+      height        : fit-content;
+      margin-bottom : 2rem;
+
+      .column-seg-trab-img {
+        width: 100%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .column-seg-trab {
+        width: 100%;
+      }
+    }
+
+    .fundo-NR {
+      flex-direction: column-reverse;
+      height        : fit-content;
+
+      .column-nr {
+        width  : 100%;
+        padding: 0;
+
+        .titulo-desc {
+          width: 100%;
+        }
+
+        .desc {
+          width: 100%;
+        }
+      }
+
+      .column-nr-img {
+        width        : 100%;
+        margin-bottom: 2rem;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .row-escopo {
+      .column-escopo {
+        max-width: 100%;
+      }
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear  : both;
+    }
+
+  }
+}
