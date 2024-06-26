@@ -88,14 +88,14 @@
 }
 
 @media screen and (max-width: 997px) {
-  .section-seg-trab {
+  .section-educacao{
 
-    .row-seg-trab {
+    .row-educacao{
       flex-direction: column;
       height        : fit-content;
       margin-bottom : 2rem;
 
-      .column-seg-trab-img {
+      .column-educacao-img {
         width: 100%;
 
         img {
@@ -103,48 +103,9 @@
         }
       }
 
-      .column-seg-trab {
+      .column-educacao{
         width: 100%;
       }
-    }
-
-    .fundo-NR {
-      flex-direction: column-reverse;
-      height        : fit-content;
-
-      .column-nr {
-        width  : 100%;
-        padding: 0;
-
-        .titulo-desc {
-          width: 100%;
-        }
-
-        .desc {
-          width: 100%;
-        }
-      }
-
-      .column-nr-img {
-        width        : 100%;
-        margin-bottom: 2rem;
-
-        img {
-          max-width: 100%;
-        }
-      }
-    }
-
-    .row-escopo {
-      .column-escopo {
-        max-width: 100%;
-      }
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear  : both;
     }
 
   }

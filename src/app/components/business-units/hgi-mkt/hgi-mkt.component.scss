@@ -1,0 +1,125 @@
+/* header */
+.section-header-mkt {
+  background-image   : url(../../../../assets/hgimkt/header-mkt.webp);
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: center;
+  height             : 80%;
+  max-width          : 100%;
+}
+
+/* body */
+.section-mkt {
+  padding         : 2rem 1rem 1rem 1rem;
+  background-color: #1e242b;
+  background-image: radial-gradient(at 47% 33%,
+      hsl(212.31, 18%, 14.000000000000002%) 0,
+      transparent 59%),
+    radial-gradient(at 82% 65%, hsl(206.67, 20%, 18%) 0, transparent 55%);
+
+  .titulo-mkt {
+    text-align : center;
+    width      : 100%;
+    font-size  : 2.9rem;
+    font-weight: 700;
+    color      : #f6f8f9;
+    line-height: 52px;
+    font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
+    padding    : 1em 0 6px 0;
+  }
+
+  .row-mkt {
+    display        : flex;
+    text-align     : left;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    padding        : 2em;
+
+    .column-mkt-img {
+      width: 39%;
+
+      img {
+        width           : 20rem;
+        border-radius   : 5px;
+        background-color: #f6f8f9;
+      }
+    }
+
+    .column-mkt {
+      width: 50%;
+      color: #f6f8f9;
+
+      div {
+        margin-top: 18px;
+        font-size : 16px;
+      }
+    }
+  }
+
+  .row-mkt-escopo {
+    display        : flex;
+    text-align     : left;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : flex-start;
+    padding        : 2em;
+    line-height    : 35px;
+
+    .column-mkt-escopo {
+      width: 50%;
+      color: #f6f8f9;
+      font-size: 1.2em;
+
+      ul {
+        display        : block;
+        list-style-type: disc;
+        margin-top     : 1em;
+        margin-bottom  : 1 em;
+        margin-left    : 0;
+        margin-right   : 0;
+        padding-left   : 40px;
+      }
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+}
+
+@media screen and (max-width: 997px) {
+  .section-mkt {
+
+    .row-mkt {
+      flex-direction: column;
+      height        : fit-content;
+      margin-bottom : 2rem;
+
+      .column-mkt-img {
+        width: 100%;
+        text-align: center;
+        padding: 1em;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .column-mkt {
+        width: 100%;
+      }
+    }
+    .row-mkt-escopo {
+      flex-direction: column;
+      height        : fit-content;
+      margin-bottom : 2rem;
+
+      .column-mkt-escopo {
+        width: 100%;
+      }
+    }
+
+  }
+}
