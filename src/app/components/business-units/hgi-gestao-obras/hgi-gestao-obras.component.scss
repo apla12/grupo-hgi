@@ -1,0 +1,153 @@
+/* header */
+.section-header-gestao-obras {
+  background-image   : url(../../../../assets/hgigestaoobras/header-gestaoobras.webp);
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: center;
+  height             : 80%;
+  max-width          : 100%;
+}
+
+/* body */
+.section-gestao-obras {
+  padding         : 2rem 1rem 1rem 1rem;
+  background-color: #1e242b;
+  background-image: radial-gradient(at 47% 33%,
+      hsl(212.31, 18%, 14.000000000000002%) 0,
+      transparent 59%),
+    radial-gradient(at 82% 65%, hsl(206.67, 20%, 18%) 0, transparent 55%);
+
+  .titulo-gestao-obras {
+    text-align : center;
+    width      : 100%;
+    font-size  : 2.9rem;
+    font-weight: 700;
+    color      : #f6f8f9;
+    line-height: 52px;
+    font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
+    padding    : 1em 0 6px 0;
+  }
+
+  .row-gestao-obras {
+    display        : flex;
+    text-align     : left;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : flex-start;
+    padding        : 2em;
+    gap            : 5em;
+    line-height    : 35px;
+
+    .column-gestao-obras-img {
+      width     : 100%;
+      text-align: center;
+
+      img {
+        width           : 70%;
+        border-radius   : 5px;
+        background-color: #f6f8f9;
+      }
+    }
+
+    .column-gestao-obras {
+      width: 50%;
+      color: #f6f8f9;
+
+      p {
+        color      : #da692d;
+        font-weight: 800;
+      }
+
+      div {
+        margin-top: 18px;
+        font-size : 16px;
+
+        ul {
+          display        : block;
+          list-style-type: disc;
+          margin-top     : 1em;
+          margin-bottom  : 1 em;
+          margin-left    : 0;
+          margin-right   : 0;
+          padding-left   : 40px;
+          font-weight    : 300;
+        }
+      }
+    }
+  }
+
+  .row-gestao-obras-escopo {
+    display        : flex;
+    text-align     : left;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    padding        : 2em;
+    line-height    : 35px;
+    gap            : 5em;
+
+    .column-gestao-obras-escopo {
+      width    : 50%;
+      color    : #f6f8f9;
+      font-size: 1.2em;
+
+      img {
+        width           : 100%;
+        border-radius   : 5px;
+        background-color: #f6f8f9;
+      }
+
+      ol li {
+        list-style-type  : none;
+        counter-increment: item;
+        font-weight      : 300;
+      }
+
+      ol li:before {
+        content: counter(item) " - ";
+        //color: #f9dd94;
+      }
+
+    }
+
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+}
+
+@media screen and (max-width: 997px) {
+  .section-gestao-obras {
+    .row-gestao-obras {
+      flex-direction: column;
+      width         : 100%;
+      padding       : 0;
+      gap           : 1em;
+
+      .column-gestao-obras-img {
+        img {
+          width: 100%;
+        }
+      }
+
+      .column-gestao-obras {
+        width: 100%;
+      }
+    }
+
+    .row-gestao-obras-escopo {
+      flex-direction: column;
+      gap           : 1em;
+      padding       : 0;
+
+      .column-gestao-obras-escopo {
+        width: 100%;
+      }
+    }
+
+  }
+
+}
