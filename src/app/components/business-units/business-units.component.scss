@@ -1,5 +1,5 @@
 .business-units-section {
-  padding         : 2rem 1rem 1rem 1em;
+  padding         : 2em 1em 1em 1em;
   background-color: #1e242b;
   background-image: radial-gradient(at 47% 33%,
       hsl(212.31, 18%, 14.000000000000002%) 0,
@@ -10,12 +10,12 @@
   .titulo-bu {
     text-align : center;
     width      : 100%;
-    font-size  : 3rem;
+    font-size  : 3em;
     font-weight: 700;
     color      : #f6f8f9;
     line-height: 52px;
     font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
-    padding    : 2em 0 2em 0;
+    padding    : 2em 0 1em 0;
   }
 
   .content-body-bu {
@@ -23,8 +23,8 @@
     flex-direction : row;
     justify-content: center;
     align-items    : center;
-    gap            : 1rem;
-    padding        : 1rem 1rem 1rem 1rem;
+    gap            : 1em;
+    padding        : 1em 1em 1em 1em;
 
     .unique-card-bu {
       position     : relative;
@@ -89,7 +89,7 @@
     }
 
     .card-description-bu {
-      font-size: 0.9rem;
+      font-size: 0.9em;
       padding  : 10px;
     }
 

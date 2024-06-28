@@ -1,5 +1,5 @@
 .client-section {
-  padding              : 2rem 1rem 2rem 1em;
+  padding              : 1em 1em 1em 1em;
   margin-top           : -1px;
   background-color     : #1f262f;
   background-image     : url(../../../assets/imgs/mapa-mundi-clients.webp);
@@ -11,12 +11,12 @@
   .titulo-client {
     text-align : center;
     width      : 100%;
-    font-size  : 3rem;
+    font-size  : 3em;
     font-weight: 700;
     line-height: 52px;
     color      : #f6f8f9;
     font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
-    padding    : 2em 0 0 0;
+    padding    : 1em 0 1em 0;
   }
 
   .destaque-client {
@@ -29,8 +29,8 @@
     flex-direction : row;
     justify-content: center;
     align-items    : center;
-    gap            : 2rem;
-    padding        : 2rem 2em 0 2em;
+    gap            : 2em;
+    padding        : 2em 2em 0 2em;
 
     .header-card-client {
       background: transparent;
@@ -48,7 +48,7 @@
         text-align    : center;
         align-items   : center;
         width         : 100%;
-        font-size     : 1.2rem;
+        font-size     : 1.2em;
 
         img {
           width        : 80px;
@@ -72,14 +72,15 @@
 @media (max-width: 997px) {
   .client-section {
     .client-content {
-      flex-direction: column;
+      flex-direction : column;
+      align-items    : center;
+      justify-content: center;
 
       .header-card-client {
-        width: 100%;
 
         .img-card-client {
           img {
-            width: 100%;
+            max-width: 100%;
           }
         }
       }
