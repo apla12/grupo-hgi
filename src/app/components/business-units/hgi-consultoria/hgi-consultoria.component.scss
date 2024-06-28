@@ -3,14 +3,26 @@
   background-image   : url(../../../../assets/hgiconsultoria/header-consultoria.webp);
   background-repeat  : no-repeat;
   background-size    : cover;
-  background-position: top;
+  background-position: center;
+  max-width          : 100%;
   height             : 80%;
-  width              : 100%;
+
+  .logo-consultoria {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+
+    img {
+      max-width: 100%;
+      padding  : 15em 0 15em 0;
+    }
+  }
 }
 
 // body
 .section-consultoria {
-  padding         : 2rem 1rem 1rem 1rem;
+  padding         : 2em 1em 1em 1em;
   background-color: #1e242b;
   background-image: radial-gradient(at 47% 33%,
       hsl(212.31, 18%, 14.000000000000002%) 0,
@@ -20,7 +32,7 @@
   .titulo {
     text-align : center;
     width      : 100%;
-    font-size  : 2.9rem;
+    font-size  : 2.9em;
     font-weight: 700;
     color      : #f6f8f9;
     line-height: 52px;
@@ -34,13 +46,13 @@
 
   .row {
     display        : flex;
-    text-align     : center;
     flex-direction : row;
     justify-content: center;
     align-items    : center;
 
     .column {
-      width: 39%;
+      width     : 39%;
+      text-align: center;
 
       img {
         width        : 20em;
@@ -49,11 +61,13 @@
     }
 
     .column1 {
-      width: 39%;
+      width     : 39%;
+      text-align: left;
 
       p {
         color    : #f6f8f9;
-        font-size: 1.3rem;
+        font-size: 17px;
+        font-weight: 300;
       }
 
     }
@@ -94,7 +108,6 @@
         background-color: rgba(65, 65, 65, 0.308);
         border          : 1px solid rgba(255, 255, 255, 0.089);
         cursor          : pointer;
-        font-family     : "Space Grotesk", Verdana, Geneva, Tahoma, sans-serif;
 
         span {
           color      : #f6f8f9;
@@ -138,19 +151,19 @@
   }
 
   .details-fase {
-    padding: 8rem 2rem 2rem 2rem;
+    padding: 8em 2em 2em 2em;
 
     .step {
       display        : flex;
       flex-direction : column;
       justify-content: center;
       text-align     : left;
-      padding        : 2rem 2rem 2rem 2rem;
+      padding        : 2em 2em 2em 2em;
 
       .titulo-fase {
         text-align : left;
         width      : 100%;
-        font-size  : 1.5rem;
+        font-size  : 1.5em;
         font-weight: 700;
         color      : #f6f8f9;
         font-family: 'introBlack', Verdana, Geneva, Tahoma, sans-serif;
@@ -160,7 +173,7 @@
       .subtitulo-fase {
         text-align : left;
         width      : 100%;
-        font-size  : 1rem;
+        font-size  : 1em;
         color      : #da692d;
         font-weight: 500;
         font-family: 'Space Grotesk', Verdana, Geneva, Tahoma, sans-serif;
@@ -175,12 +188,13 @@
         flex-direction : column;
         justify-content: center;
         text-align     : left;
-        padding        : 2rem 0 0 0;
+        padding        : 2em 0 0 0;
         line-height    : 28px;
 
         span {
           color    : #f6f8f9;
-          font-size: 0.9rem;
+          font-size: 17px;
+          font-weight: 300;
         }
       }
     }
@@ -208,6 +222,10 @@
 }
 
 @media screen and (max-width: 997px) {
+  .section-header-consultoria {
+    height: 60%;
+  }
+
   .section-consultoria {
 
     .row {
@@ -220,7 +238,7 @@
 
       .column1 {
         width  : 100%;
-        padding: 2rem 1rem 1rem 1rem;
+        padding: 2em 1em 1em 1em;
       }
     }
 
@@ -240,7 +258,7 @@
     }
 
     .details-fase {
-      padding: 2rem 0 0 0;
+      padding: 2em 0 0 0;
     }
 
   }
