@@ -6,6 +6,18 @@
   background-position: center;
   height             : 100%;
   width              : 100%;
+
+  .logo-supply {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+
+    img {
+      max-width: 100%;
+      padding  : 15em 0 15em 0;
+    }
+  }
 }
 
 // body
@@ -89,6 +101,10 @@
 
 
 @media screen and (max-width: 997px) {
+  .section-header-supply {
+    height: 60%;
+  }
+
   .section-supply {
 
     .client-content {
