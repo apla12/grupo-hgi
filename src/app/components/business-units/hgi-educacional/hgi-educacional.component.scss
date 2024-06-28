@@ -6,11 +6,23 @@
   background-position: center;
   height             : 80%;
   max-width          : 100%;
+
+  .logo-educacao {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+
+    img {
+      max-width: 100%;
+      padding  : 15em 0 15em 0;
+    }
+  }
 }
 
 /* body */
 .section-educacao {
-  padding         : 2rem 1rem 1rem 1rem;
+  padding         : 2em 1em 1em 1em;
   background-color: #1e242b;
   background-image: radial-gradient(at 47% 33%,
       hsl(212.31, 18%, 14.000000000000002%) 0,
@@ -20,7 +32,7 @@
   .titulo-educacao {
     text-align : center;
     width      : 100%;
-    font-size  : 2.9rem;
+    font-size  : 2.9em;
     font-weight: 700;
     color      : #f6f8f9;
     line-height: 52px;
@@ -31,7 +43,7 @@
   .subtitulo-educacao {
     text-align : center;
     width      : 100%;
-    font-size  : 1.2rem;
+    font-size  : 1.2em;
     font-weight: lighter;
     color      : #da692d;
     font-family: 'Space Grotesk', Verdana, Geneva, Tahoma, sans-serif;
@@ -49,7 +61,7 @@
       width: 39%;
 
       img {
-        width           : 20rem;
+        width           : 20em;
         border-radius   : 5px;
         background-color: #f6f8f9;
       }
@@ -60,8 +72,10 @@
       color: #f6f8f9;
 
       div {
-        margin-top: 18px;
-        font-size : 16px;
+        margin-top : 18px;
+        font-size  : 17px;
+        font-weight: 300;
+        line-height: 25px;
       }
     }
   }
@@ -75,35 +89,46 @@
     flex-direction : row;
     justify-content: center;
     align-items    : center;
-    padding        : 0 1rem 4rem 1rem;
+    padding        : 0 1em 4em 1em;
+
+    video{
+      max-width: 100%;
+    }
   }
 
-  .mapa-unicte{
+  .mapa-unicte {
     display        : flex;
     flex-direction : row;
     justify-content: center;
     align-items    : center;
+
+    img{
+      max-width: 100%;
+    }
   }
 
 }
 
 @media screen and (max-width: 997px) {
-  .section-educacao{
+  .section-header-educacao {
+    height: 60%;
+  }
 
-    .row-educacao{
+  .section-educacao {
+
+    .row-educacao {
       flex-direction: column;
       height        : fit-content;
-      margin-bottom : 2rem;
+      margin-bottom : 2em;
 
       .column-educacao-img {
-        width: 100%;
 
         img {
           max-width: 100%;
         }
       }
 
-      .column-educacao{
+      .column-educacao {
         width: 100%;
       }
     }
