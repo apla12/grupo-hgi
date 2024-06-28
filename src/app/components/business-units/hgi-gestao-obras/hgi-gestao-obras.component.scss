@@ -3,14 +3,26 @@
   background-image   : url(../../../../assets/hgigestaoobras/header-gestaoobras.webp);
   background-repeat  : no-repeat;
   background-size    : cover;
-  background-position: center;
+  background-position: bottom;
   height             : 80%;
   max-width          : 100%;
+
+  .logo-gestao-obras{
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+
+    img {
+      max-width: 100%;
+      padding  : 15em 0 15em 0;
+    }
+  }
 }
 
 /* body */
 .section-gestao-obras {
-  padding         : 2rem 1rem 1rem 1rem;
+  padding         : 2em 1em 1em 1em;
   background-color: #1e242b;
   background-image: radial-gradient(at 47% 33%,
       hsl(212.31, 18%, 14.000000000000002%) 0,
@@ -20,12 +32,12 @@
   .titulo-gestao-obras {
     text-align : center;
     width      : 100%;
-    font-size  : 2.9rem;
+    font-size  : 2.9em;
     font-weight: 700;
     color      : #f6f8f9;
     line-height: 52px;
     font-family: "introBlack", Verdana, Geneva, Tahoma, sans-serif;
-    padding    : 1em 0 6px 0;
+    padding    : 1em 0 1em 0;
   }
 
   .row-gestao-obras {
@@ -60,13 +72,13 @@
 
       div {
         margin-top: 18px;
-        font-size : 16px;
+        font-size : 17px;
 
         ul {
           display        : block;
           list-style-type: disc;
           margin-top     : 1em;
-          margin-bottom  : 1 em;
+          margin-bottom  : 1em;
           margin-left    : 0;
           margin-right   : 0;
           padding-left   : 40px;
@@ -120,6 +132,10 @@
 }
 
 @media screen and (max-width: 997px) {
+
+  .section-header-gestao-obras {
+    height: 60%;
+  }
   .section-gestao-obras {
     .row-gestao-obras {
       flex-direction: column;
