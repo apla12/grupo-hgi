@@ -6,11 +6,23 @@
   background-position: center;
   height             : 80%;
   max-width          : 100%;
+
+  .logo-mkt {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+
+    img {
+      max-width: 100%;
+      padding  : 15em 0 15em 0;
+    }
+  }
 }
 
 /* body */
 .section-mkt {
-  padding         : 2rem 1rem 1rem 1rem;
+  padding         : 2em 1em 1em 1em;
   background-color: #1e242b;
   background-image: radial-gradient(at 47% 33%,
       hsl(212.31, 18%, 14.000000000000002%) 0,
@@ -20,7 +32,7 @@
   .titulo-mkt {
     text-align : center;
     width      : 100%;
-    font-size  : 2.9rem;
+    font-size  : 2.9em;
     font-weight: 700;
     color      : #f6f8f9;
     line-height: 52px;
@@ -40,7 +52,7 @@
       width: 39%;
 
       img {
-        width           : 20rem;
+        width           : 20em;
         border-radius   : 5px;
         background-color: #f6f8f9;
       }
@@ -67,15 +79,20 @@
     line-height    : 35px;
 
     .column-mkt-escopo {
-      width: 50%;
-      color: #f6f8f9;
+      width    : 50%;
+      color    : #f6f8f9;
       font-size: 1.2em;
+
+      p{
+        color      : #da692d;
+        font-weight: 800;
+      }
 
       ul {
         display        : block;
         list-style-type: disc;
         margin-top     : 1em;
-        margin-bottom  : 1 em;
+        margin-bottom  : 1em;
         margin-left    : 0;
         margin-right   : 0;
         padding-left   : 40px;
@@ -90,17 +107,21 @@
 }
 
 @media screen and (max-width: 997px) {
+  .section-header-mkt {
+    height: 60%;
+  }
+
   .section-mkt {
 
     .row-mkt {
       flex-direction: column;
       height        : fit-content;
-      margin-bottom : 2rem;
+      margin-bottom : 2em;
 
       .column-mkt-img {
-        width: 100%;
+        width     : 100%;
         text-align: center;
-        padding: 1em;
+        padding   : 1em;
 
         img {
           max-width: 100%;
@@ -111,10 +132,11 @@
         width: 100%;
       }
     }
+
     .row-mkt-escopo {
       flex-direction: column;
       height        : fit-content;
-      margin-bottom : 2rem;
+      margin-bottom : 2em;
 
       .column-mkt-escopo {
         width: 100%;
